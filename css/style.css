@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: tahoma;
+}
+
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+#fullpage {
+    height: 100vh;
+    overflow: hidden;
+    }
+#fullpage section {
+    height: 100vh;
+    
+}
+/* -------------------------------------------pagina 1------------------------------------------------*/
+.banner {
+    margin: 0 auto;
+    height: 100vh;
+    width: auto;
+    position: relative;
+}
+.background1 {
+    width: 100%;
+    height: 100%;
+    background: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: blur(2px) grayscale(100);
+    -webkit-filter: blur(2px) grayscale(100);
+    -moz-filter: blur(2px) grayscale(100);
+    
+}
+
+.overlay {
+    height: 100%;
+    width: auto;
+    background: rgba(0,0,0,0.6);
+    
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.content h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+    color: aliceblue;
+    
+}
+
+/* ------------------------------------------------pagina 2---------------------------------------------------- */
+.content p {
+    color: aliceblue;
+}
+
+.about {
+    height: 100vh;
+    width: auto;
+    position: relative;
+}
+.background2 {
+    width: 100%;
+    height: 100%;
+    background: url('../img/cover1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+}
+.background2 .overlay {
+    height: 100%;
+    width: auto;
+    background: rgba(0,0,0,0.8);
+}
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    color: aliceblue;
+}
+.outter {
+    width: 95%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.quickabout {
+    padding: 6em 3em 0 7.9em;
+    width: 50%;
+    text-align: center;
+    float: left;
+    line-height: 1.7;
+    font-size:1em;
+}
+.quickabout p {
+    padding-top: 2em;
+    
+}
+.avatar {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.inner-avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.avatar img {
+    height: 320px;
+    width: 320px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+   /* border: 1px solid aliceblue; */
+}
+.social {
+    position: relative;
+    padding-top: 6em;
+    font-size: 1.1em;
+    height: 100%;
+    width: 15%;
+    float: right;
+}
+.social p.title {
+    text-align: right;
+    margin-bottom: 0;
+    
+}
+.social .btn {
+    height: 50px;
+    width:100%;
+    margin-top:3em;
+    position: relative;
+    }
+social a{
+    text-decoration: none;
+}
+
+
+.btn-fb, .btn-gab, .btn-minds {
+     text-align: right; 
+     background-color: aliceblue;
+     border: 1px solid #000;
+     right: 0;
+     position: absolute;
+     height: 50px;
+     width:50px;
+     border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+}
+
+.social img {
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+#facebook, #gab, #minds {
+    position: absolute;
+    width:70px;
+    float:left;
+    margin-top: .8em;
+    margin-left:0;
+    text-align: right;
+    opacity: 0;
+    right: 0;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    }
+
+.contact {
+    padding-top: 3em;
+    width: 95%;
+    height: 15%;
+    margin: 0 auto;
+}
+
+.card {
+    
+    width: 19%;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+}
+/* ------------------------------------------------pagina 3---------------------------------------------------- */
+
+.edskills {
+    height: 100vh;
+    width: auto;
+    position: relative;
+    
+}
+.background3 {
+    width: 100%;
+    height: 100%;
+    background: url('../img/cover2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+}
+.background3 .overlay {
+    height: 100%;
+    width: auto;
+    background: rgba(0,0,0,0.8);
+}
+.edskills .title {
+    font-size: 1em;
+    font-weight: 300;
+    height: 3.5em;
+    width: 25em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2em;
+    border-top: 1px solid #95D3FF;
+    border-bottom: 1px solid #95D3FF;
+    line-height: 3.5em;
+    position: relative;
+    }
+.edskills .inner-title {
+    height: 3.2em;
+    line-height: 3.2em;
+    top:.09em;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 1px solid #95D3FF;
+    border-bottom: 1px solid #95D3FF;
+}
+.highschool, .college {
+    margin-top: 1.2em;
+    height: 11em;
+    width: 100%;
+}
+.webdev {
+    margin-top: 1.2em;
+    height: 14em;
+    width: 100%;
+}
+.college h2 span {
+    font-size: .5em;
+}
+.container2 {
+    width: 95%;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+        
+}
+.description, .links, .batteries, .link, .line, .unit, .corp, hr {
+    pointer-events: none;
+}
+.description, .batteries .battery .corp, .batteries .battery .actualpeak {
+    float: left;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.description {
+    height: 100%;
+    width:45%;
+    padding: .7em;
+    border: 2px solid #95D3FF;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+.description span {
+    font-size: .7em;
+}
+.description .header{
+    padding-bottom:1em;
+}
+.description p{
+    font-size: .9em;
+    line-height: 1.4;
+}
+.links {
+    float: left;
+    height: 100%;
+    width:8%;
+}
+.highschool .link, .college .link {
+    height: 50%;
+    width: 0%;
+    position: relative;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+}
+
+.webdev .link {
+    height: 25%;
+    width: 0%;
+    position: relative;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+}
+.highschool hr, .college hr {
+    border: none;
+    border-top: 4px solid #D2691E;
+    width: 70%;
+    top: 50%;
+    position: absolute;
+    
+}
+.webdev hr {
+    border: none;
+    border-top: 4px solid #D2691E;
+    width: 70%;
+    top: 50%;
+    position: absolute;
+    
+}
+.highschool .plug, .college .plug {
+    position: absolute;
+    font-size: 2.4em;
+    color: #D2691E;
+    top:25%;
+    right: 0;
+    opacity: 0;
+    transform: rotate(45deg);
+     transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+}
+.webdev .plug {
+    position: absolute;
+    font-size: 2.4em;
+    color: #D2691E;
+    top:12%;
+    right: 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+}
+
+.batteries {
+    width:47%;
+    height: 100%;
+    float: left;
+    position: relative;
+    
+}
+
+
+
+.highschool .battery {
+    height: 3em;
+    width: 100%;
+    position: absolute;
+}
+
+.highschool .battery:first-child {
+    top: 1.4em;
+}
+.highschool .battery:last-child {
+    bottom: 1.2em;
+}
+.college .battery { 
+    height: 3em;
+    width: 100%;
+    position: absolute;
+}
+.college .battery:first-child {
+    top: 1.4em;
+}
+.college .battery:last-child {
+    bottom: 1.2em;
+}
+.webdev .battery {
+    height: 3em;
+    width: 100%;
+    position: absolute;
+}
+.webdev .battery:nth-child(1) {
+    top:.4em;
+}
+.webdev .battery:nth-child(2) {
+    top:3.9em;
+}
+.webdev .battery:nth-child(3) {
+    bottom: 3.6em;
+}
+.webdev .battery:nth-child(4) {
+    bottom: .1em;
+}
+
+
+.battery .corp {
+    height: 100%;
+    width: 80%;
+    border-top: 2px solid #95D3FF;
+    border-bottom: 2px solid #95D3FF;
+    border-left: 2px solid #95D3FF;
+    float: left;
+    text-align: right;
+    line-height: 3em;
+    padding-right: 1em;
+}
+
+.varf {
+    height: 100%;
+    width: 30px;
+    float: left;
+    position: relative;
+}
+.varf .lineup {
+    position: absolute;
+    top:0;
+    display: block;
+    height: 12px;
+    width: 100%;
+    border-left: 2px solid #95D3FF;
+}
+.varf .linebottom {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 12px;
+    width: 100%;
+    border-left: 2px solid #95D3FF;
+}
+.varf .actualpeak {
+    position: absolute;
+    top:11px;
+    height: 25px;
+    display: block;
+    width: 20px;
+    border-top: 2px solid #95D3FF;
+    border-bottom: 2px solid #95D3FF;
+    border-right: 2px solid #95D3FF;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+}
+
+.corp p  {
+    z-index: 100;
+    position: absolute;
+    right: 25%;
+}
+
+.corp .unit {
+    height: 100%;
+    width: 10%;
+    float: left;
+    z-index: 100;
+    opacity: .1;
+    margin: 1px;
+}
+
+.highschool .corp .unit {
+    background: #ff8080;
+}
+.college .corp .unit {
+    background: #cccc00;
+}
+.webdev .corp .unit {
+    background: #ffff66;
+}
+/*------------------------------------------pagina 4-----------------------------------------------------------------*/
+.port {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.outter-port {
+    width: 50%;
+    height: 70vh;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 5em;
+    position: relative;
+}
+.portofolio {
+    height: 60vh;
+    width: 100%;
+    border: 2px solid #95D3FF;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+    
+}
+.port .description {
+    margin: 0 auto;
+    background: none;
+    opacity: none;
+    border: none;
+    width: 100%;
+    
+}
+.proj {
+    height: 50%;
+    width: 33.33%;
+    background: red;
+    float: left;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------media queries---------------------------------------------------- */
+
+@media screen and (max-width: 1170px){
+    .quickabout {
+        font-size:0.95em;
+        padding: 6em 3em 0 5em;
+        width: 55%;
+        
+    }
+    .avatar {
+        width: 30%;
+    }
+    .avatar img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 952px){
+    .quickabout {
+        font-size:0.9em;
+        padding: 6em 3em 0 5em;
+        width: 60%;
+     }
+    .avatar {
+        width: 25%;
+    }
+    .avatar img {
+        height: 170px;
+        width: 170px;
+    }
+    .contact {
+        font-size: .8em;
+    }
+    .social {
+        font-size: .8em;
+        padding-top: 12em;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    
+    .about{
+        font-size: 1.05em;
+    }
+.outter {
+    width: 95%;
+    height: 85%;
+    margin: 0 auto;
+}
+.quickabout {
+    padding: 4em 2em 1em 2em;
+    width: 100%;
+    float: none;
+    line-height: 1.7;
+    font-size:.8em;
+}
+.quickabout p{
+        padding-top: 2em;
+    }
+.avatar {
+    width: 100%;
+    height: 19em;
+    float: none;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.social {
+    display: none;
+}
+.contact {
+    padding-top: 0;
+    width: 95%;
+    height: 17em;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+}
+.card {
+    
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 450px){
+    
+.content {
+    font-size:.7em;
+        
+    }    
+.about{
+        font-size: .85em;
+    }
+.outter {
+    width: 95%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.quickabout {
+    padding: 4em 2em 1em 2em;
+    width: 100%;
+    float: none;
+    line-height: 1.7;
+    font-size:.8em;
+}
+.quickabout p{
+        padding-top: 2em;
+    }
+
+.avatar {
+    width: 100%;
+    height: 19em;
+    float: none;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.social {
+    display: none;
+}
+.contact {
+    padding-top: 0;
+    width: 95%;
+    height: 17em;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+}
+.card {
+    
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
