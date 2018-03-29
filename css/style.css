@@ -275,7 +275,7 @@ social a{
     width: 100%;
 }
 .college h2 span {
-    font-size: .5em;
+    font-size: .45em;
 }
 .container2 {
     width: 95%;
@@ -306,6 +306,7 @@ social a{
     border-radius: 7px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
+    position: relative;
 }
 .description span {
     font-size: .7em;
@@ -316,6 +317,59 @@ social a{
 .description p{
     font-size: .9em;
     line-height: 1.4;
+}
+
+.description .skills {
+    right: 0;
+    top: 2em;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    opacity: 0;
+    }
+.skills.skills1 {
+    top: 4em;
+    
+}
+.skills.skills2 {
+    top: 3em;
+    
+}
+
+.skills .fa-circle {
+    font-size: .9em;
+    color: #888;
+    
+    
+}
+.skills .ratings {
+    margin-bottom: 5px;
+}
+.skills .ratings.ratings1 .fa-star:nth-child(1),
+.skills .ratings.ratings2 .fa-star:nth-child(1),
+.skills .ratings.ratings3 .fa-star:nth-child(1),
+.skills .ratings.ratings3 .fa-star:nth-child(2),
+.skills .ratings.ratings3 .fa-star:nth-child(3),
+.skills .ratings.ratings4 .fa-star:nth-child(1),
+.skills .ratings.ratings4 .fa-star:nth-child(2),
+.skills .ratings.ratings4 .fa-star:nth-child(3),
+.skills .ratings.ratings5 .fa-star:nth-child(1),
+.skills .ratings.ratings5 .fa-star:nth-child(2),
+.skills .ratings.ratings5 .fa-star:nth-child(3),
+.skills .ratings.ratings6 .fa-star:nth-child(1),
+.skills .ratings.ratings6 .fa-star:nth-child(2),
+.skills .ratings.ratings6 .fa-star:nth-child(3),
+.skills .ratings.ratings7 .fa-star:nth-child(1),
+.skills .ratings.ratings7 .fa-star:nth-child(2),
+.skills .ratings.ratings8 .fa-star:nth-child(1),
+.skills .ratings.ratings8 .fa-star:nth-child(2)
+{
+    color: greenyellow;
+}
+.skills p {
+    padding-bottom: 1px;
 }
 .links {
     float: left;
@@ -487,6 +541,7 @@ social a{
     z-index: 100;
     position: absolute;
     right: 25%;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .corp .unit {
@@ -603,6 +658,20 @@ social a{
         font-size: .8em;
         padding-top: 12em;
     }
+    
+    .batteries, .links {
+        display: none;
+        
+    }
+    .description {
+        width: 100%;
+    }
+    .description p {
+        width: 60%;
+    }
+    .description .skills {
+        opacity: 1;
+    }
 }
 
 
@@ -655,9 +724,78 @@ social a{
     text-align: center;
     margin: 0 auto;
 }
+    .highschool, .college, .webdev {
+        font-size: .85em;
+     }
+    .highschool {
+        height: 22%;
+    }
+    .college {
+        height: 22%
+    }
+    .webdev {
+        height: 30%
+    }
+    
 }
 
+@media screen and (max-width: 635px){
+    .edskills .title {
+    font-size: .7em;
+    width: 20em;
+    }
+.description {
+    height: 100%;
+    width:100%;
+    padding: .7em;
+    border:none;
+    position: relative;
+    background: none;
+    text-align: center;
+    float: none;
+}
+.description span {
+    font-size: .7em;
+}
+.description .header{
+    padding-bottom:.2em;
+}
+.description p{
+    font-size: .8em;
+    line-height: 1.4;
+    width: 100%;
+}
 
+.description .skills {
+    right: inherit;
+    top: inherit;
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8em;
+    line-height: 1em;
+    opacity: 1;
+    display: inline;
+    }
+.skills.skills1, .skills.skills2, .skills.skills3 {
+    top: 1em;
+      
+}
+    .skills .fa-circle{
+        display: none;
+    }
+    .header h2{
+        font-size: 1em;
+    }
+    .college h2 span {
+        display: none;
+    }
+
+
+.skills .ratings {
+    margin-bottom: 5px;
+}
+}
 
 
 
@@ -715,6 +853,9 @@ social a{
     text-align: center;
     margin: 0 auto;
 }
+    
+    
+    
 }
 
 
