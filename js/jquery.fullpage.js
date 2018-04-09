@@ -42,8 +42,8 @@
 			initHTML:function(){
 				this.$el.children().css({
 					'height':'100vh',
-					'transition':'all 1.4s',
-					'-webkit-transition':'all 1.4s'
+					'transition':'all .9s',
+					'-webkit-transition':'all .9s'
 				});
 			},
 			bindEvent:function(){

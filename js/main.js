@@ -35,7 +35,7 @@ $(document).ready(function() {
    
   
     
-    
+  //--------------------------------------functia de incarcat baterii skills---------------------------------------  
  
 	function charge1(i)
 	{	 		
@@ -191,7 +191,14 @@ $(document).ready(function() {
     $('.highschool .plug').css("opacity", "0");
     });
     
+    /*-----------------------------------------------functia dotmenu----------------------------------------------
     
+    $(".disc").first().addClass('solidDisc');
+    var circles = $('.disc');
     
-    
+    circles.click(function(event) {
+        circles.removeClass('solidDisc');
+        $(event.target).addClass('solidDisc');
+    });
+    */
 });
