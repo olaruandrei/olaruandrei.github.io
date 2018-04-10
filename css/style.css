@@ -168,7 +168,7 @@ social a{
 }
 
 
-.btn-fb, .btn-gab, .btn-minds {
+.btn-fb, .btn-gab, .btn-minds, .btn-linkedin {
      text-align: right; 
      background-color: aliceblue;
      border: 1px solid #000;
@@ -195,7 +195,7 @@ social a{
     -moz-border-radius: 6px;
     -o-border-radius: 6px;
 }
-#facebook, #gab, #minds {
+#facebook, #gab, #minds, #linkedin {
     position: absolute;
     width:70px;
     float:left;
@@ -297,9 +297,7 @@ social a{
     overflow: hidden;
         
 }
-.description, .links, .batteries, .link, .line, .unit, .corp, hr {
-    pointer-events: none;
-}
+
 .description, .batteries .battery .corp, .batteries .battery .actualpeak {
     float: left;
     background: rgba(0,0,0,0.5);
@@ -317,6 +315,7 @@ social a{
     -o-border-radius: 7px;
     position: relative;
 }
+
 .description span {
     font-size: .7em;
 }
@@ -326,6 +325,7 @@ social a{
 .description p{
     font-size: .9em;
     line-height: 1.4;
+    z-index:100;
 }
 
 .description .skills {

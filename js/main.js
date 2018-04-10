@@ -32,6 +32,15 @@ $(document).ready(function() {
         $("#minds").css("opacity", 0).css("right", "0px");
         $(".btn-minds").css("background","aliceblue").css("border-color", "#000");
         });
+    
+     $('.btn-linkedin').mouseenter(function(){
+        $("#linkedin").css("opacity", 1).css("right", "65px");
+        $(".btn-linkedin").css("background","none").css("border-color", "aliceblue");
+        });
+    $('.btn-linkedin').mouseleave(function(){
+        $("#linkedin").css("opacity", 0).css("right", "0px");
+        $(".btn-linkedin").css("background","aliceblue").css("border-color", "#000");
+        });
    
   
     
