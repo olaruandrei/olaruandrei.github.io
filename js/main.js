@@ -200,6 +200,20 @@ $(document).ready(function() {
     $('.highschool .plug').css("opacity", "0");
     });
     
+    for(let i=1;i<=6;i++){
+    $('.proj'+i+' .titlu_proiect').mouseenter(function(){
+    $('.proj'+i+' .titlu_proiect').css("opacity","0.8");
+    $('.proj'+i+' h5').css("opacity","1");
+    $('.proj'+i+' h5').css("top","45%");
+    $('.proj'+i+' h5').css("top","45%");
+        
+    });
+    $('.proj'+i+' .titlu_proiect').mouseleave(function(){
+    $('.proj'+i+' .titlu_proiect').css("opacity", "0.3");
+    $('.proj'+i+' h5').css("opacity","0");
+    $('.proj'+i+' h5').css("top","0");
+    });
+    }
     /*-----------------------------------------------functia dotmenu----------------------------------------------
     
     $(".disc").first().addClass('solidDisc');

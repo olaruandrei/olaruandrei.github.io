@@ -1,0 +1,143 @@
+*{
+  font-family: Tahoma, sans-serif;
+  padding:0;
+  margin:0;
+}
+.container {
+  background: url('https://images.pexels.com/photos/1054147/pexels-photo-1054147.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  height: 100vh;
+  width: auto;
+  background-repeat:none;
+  background-size:cover;
+  position:relative;
+  }
+.overlay{
+  background:#000;
+  height:100vh;
+  width:auto;
+  opacity:0.2;
+  transition: background ease-in-out 0.5s;
+}
+.inner{
+  z-index:100;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border-radius:10px;
+  height:20em;
+  width:50em;
+  background:#000;
+  color:#fff;
+  opacity:0.8;
+  }
+.inner .quote{
+  height:50%;
+  width:90%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+ }
+.quote p {
+  margin:20px;
+  text-align:center;
+}
+.author, .media{
+  width:45%;
+  float:right;
+  }
+.author{ 
+  text-align:right;
+  padding-right:10%;
+}
+
+.media .buttons {
+  position:absolute;
+  bottom:30px;
+  margin-left:30px;
+  height:30px;
+}
+.buttons button:first-child{
+  margin-right:20px;
+}
+.buttons button {
+  height:100%;
+  width:120px;
+  background-color:red;
+  cursor:pointer;
+  border:1px solid #fff;
+  transition: background ease-in-out 0.5s;
+  
+}
+.buttons button:active{
+  font-size:0.8em;
+}
+.fa-twitter{
+  line-height:100%;
+  margin-right:5px;
+  color: rgb(29, 161, 242);
+  font-size:1.3em;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .inner {
+    font-size:13px;
+    height: 50%;
+    width: 80%;
+  }
+  .inner .quote {
+    height:70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .inner {
+    border-radius : 0px;
+  }
+  .inner .quote {
+    height:60%;
+  }
+  .author{
+    
+    width:80%;
+    float:none;
+    text-align:right;
+    padding-bottom:2px;
+    }
+  
+  .media {
+    width:100%;
+    float:none;
+    height:33%;
+    margin-top:5px;
+    position:absolute;
+    bottom:0;
+  }
+  .media .buttons {
+    margin:0 auto;
+    height:45%;
+    width:95%;
+    position:relative;
+    bottom:0;
+}
+  .buttons .btn{
+    height:50px;
+    width:100%;
+    
+    }
+  .buttons a{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    }
+  .buttons .btn:last-child{
+    position:absolute;
+    top:0x;
+    
+  }
+  
+
+
+}

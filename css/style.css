@@ -598,8 +598,8 @@ social a{
     margin: 0 auto;
     position: absolute;
     bottom: 0;
-    background: #000;
-    opacity: 0.7;
+    background: #222;
+    opacity: 1;
     
 }
 .port .description {
@@ -610,12 +610,67 @@ social a{
     width: 100%;
     
 }
+
 .proj {
     height: 50%;
     width: 33.33%;
-    background: red;
+    background: #000;
     float: left;
     opacity: 1;
+    transition: opacity ease-in-out 0.5s;
+    position: relative;
+ }
+.proj h5{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    top:0;
+    opacity: 0;
+    transition: all ease-in-out .7s;
+    pointer-events: none;
+   
+}
+.proj:hover{
+    opacity: 1;
+    
+}
+.proj a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 100%;
+    position: absolute;
+    
+    
+}
+.titlu_proiect{
+    opacity: 0.3;
+    z-index: 1;
+    height: 100%;
+    line-height: 30px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    background: #000;
+    text-align: center;
+    transition: opacity ease-in-out 0.3s;
+    
+}
+
+.proj1 {
+    z-index: 0;
+    background: url('../img/proj1.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.proj2 {
+    z-index: 0;
+    background: url('../img/proj2.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*------------------------------------pagina4 cta-------------------------------------*/
