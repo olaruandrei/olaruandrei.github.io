@@ -673,6 +673,12 @@ social a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.proj3 {
+    z-index: 0;
+    background: url('../img/proj3.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /*------------------------------------pagina4 cta-------------------------------------*/
 
